@@ -87,7 +87,7 @@ public class InstallActionExt extends InstallAction
    private Bundle getBundle(BundleDeployment info)
    {
       String symbolicName = info.getSymbolicName();
-      Version version = info.getVersion();
+      Version version = Version.parseVersion(info.getVersion());
 
       Bundle bundle = null;
       for (Bundle aux : getBundleContext().getBundles())
