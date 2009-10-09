@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
   </parent>
 
   <!-- Properties -->
@@ -35,12 +35,12 @@
     <version.commons.fileupload>1.1.1</version.commons.fileupload>
     <version.commons.io>1.4</version.commons.io>
     <version.felix.bundlerepository>1.0.3</version.felix.bundlerepository>
-    <version.felix.osgi.core>1.4.0</version.felix.osgi.core>
     <version.felix.scr>1.0.0</version.felix.scr>
     <version.felix.webconsole>1.2.10</version.felix.webconsole>
     <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.spi>1.0.1</version.jboss.osgi.spi>
+    <version.jboss.osgi.spi>1.0.2-SNAPSHOT</version.jboss.osgi.spi>
     <version.json>20070829</version.json>
+    <version.osgi>r4v42</version.osgi>
   </properties>
 
   <!-- Dependencies  -->
@@ -73,12 +73,6 @@
     </dependency>
     <dependency>
       <groupId>org.apache.felix</groupId>
-      <artifactId>org.osgi.compendium</artifactId>
-      <version>${version.felix.osgi.core}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.webconsole</artifactId>
       <version>${version.felix.webconsole}</version>
       <scope>provided</scope>
@@ -91,20 +85,46 @@
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
-
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.scr</artifactId>
       <version>${version.felix.scr}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>org.osgi.core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>org.osgi.compendium</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
-
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.bundlerepository</artifactId>
       <version>${version.felix.bundlerepository}</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>org.osgi.core</artifactId>
+        </exclusion>
+      </exclusions>
       <optional>true</optional>
+    </dependency>
+    
+    <!-- org.osgi -->
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>${version.osgi}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+      <version>${version.osgi}</version>
     </dependency>
   </dependencies>
 
@@ -160,6 +180,10 @@
               org.apache.felix.scr;
               org.apache.felix.shell;
               org.osgi.service.*;resolution:=optional,
+              
+              <!-- FIXME https://jira.jboss.org/jira/browse/JBOSGI-177 -->
+              org.ops4j.pax.web.service;version=0.7,
+              
               javax.portlet;resolution:=optional,*
             </Import-Package>
             <Embed-Dependency>
