@@ -21,24 +21,32 @@
   <artifactId>jboss-osgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
   
   <!-- Parent -->
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
   </parent>
 
+  <!-- SCM -->
+  <scm>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/webconsole/tags/jboss-osgi-webconsole-1.0.2</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/webconsole/tags/jboss-osgi-webconsole-1.0.2</developerConnection>
+    <url>http://fisheye.jboss.com/qsearch/JBossOSGi/tags/jboss-osgi-webconsole-1.0.2</url>
+  </scm>
+  
   <!-- Properties -->
   <properties>
     <version.commons.fileupload>1.1.1</version.commons.fileupload>
     <version.commons.io>1.4</version.commons.io>
     <version.felix.bundlerepository>1.0.3</version.felix.bundlerepository>
+    <version.felix.osgi.core>1.4.0</version.felix.osgi.core>
     <version.felix.scr>1.0.0</version.felix.scr>
     <version.felix.webconsole>1.2.10</version.felix.webconsole>
     <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.spi>1.0.2-SNAPSHOT</version.jboss.osgi.spi>
+    <version.jboss.osgi.spi>1.0.2</version.jboss.osgi.spi>
     <version.json>20070829</version.json>
     <version.osgi>r4v42</version.osgi>
   </properties>
@@ -205,11 +213,4 @@
     </plugins>
   </build>
 
-  <!-- Subversion -->
-  <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/webconsole/trunk</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossas/projects/jboss-osgi/projects/bundles/webconsole/trunk</developerConnection>
-    <url>http://fisheye.jboss.com/qsearch/JBossOSGi/projects/bundles/webconsole/trunk</url>
-  </scm>
-  
 </project>
