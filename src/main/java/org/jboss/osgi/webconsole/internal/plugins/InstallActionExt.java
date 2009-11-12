@@ -29,13 +29,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.apache.felix.webconsole.internal.core.InstallAction;
-import org.jboss.osgi.spi.service.DeployerService;
-import org.jboss.osgi.spi.util.BundleDeployment;
-import org.jboss.osgi.spi.util.BundleDeploymentFactory;
+import org.jboss.osgi.deployment.deployer.DeployerService;
+import org.jboss.osgi.deployment.deployer.Deployment;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceReference;
 import org.osgi.framework.Version;
 import org.osgi.service.log.LogService;
@@ -59,19 +57,19 @@ public class InstallActionExt extends InstallAction
          return;
       }
       final DeployerService deployer = (DeployerService)context.getService(sref);
-      
+
       Thread t = new InstallHelper(this, "Background Install " + bundleFile, bundleFile, refreshPackages)
       {
          protected Bundle doRun(InputStream bundleStream) throws BundleException
          {
             URL bundleURL = getBundleURL(bundleFile);
-            
-            BundleDeployment dep = BundleDeploymentFactory.createBundleDeployment(bundleURL);
+
+            Deployment dep = deployer.createDeployment(bundleURL);
             dep.setStartLevel(startlevel);
             dep.setAutoStart(doStart);
 
-            deployer.deploy(new BundleDeployment[] { dep });
-            
+            deployer.deploy(new Deployment[] { dep });
+
             Bundle bundle = getBundle(dep);
             if (bundle == null)
                throw new IllegalStateException("Cannot obtain installed bundle: " + dep);
@@ -84,27 +82,23 @@ public class InstallActionExt extends InstallAction
       t.start();
    }
 
-   private Bundle getBundle(BundleDeployment info)
+   private Bundle getBundle(Deployment dep)
    {
-      String symbolicName = info.getSymbolicName();
-      Version version = Version.parseVersion(info.getVersion());
+      String symbolicName = dep.getSymbolicName();
+      Version version = Version.parseVersion(dep.getVersion());
 
       Bundle bundle = null;
       for (Bundle aux : getBundleContext().getBundles())
       {
-         if (aux.getSymbolicName().equals(symbolicName))
+         if (aux.getSymbolicName().equals(symbolicName) && version.equals(aux.getVersion()))
          {
-            String auxVersion = (String)aux.getHeaders().get(Constants.BUNDLE_VERSION);
-            if (version == null || version.equals(auxVersion))
-            {
-               bundle = aux;
-               break;
-            }
+            bundle = aux;
+            break;
          }
       }
       return bundle;
    }
-   
+
    private URL getBundleURL(final File bundleFile) throws BundleException
    {
       URL bundleURL;

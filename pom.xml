@@ -27,7 +27,7 @@
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
   </parent>
 
   <!-- SCM -->
@@ -46,9 +46,10 @@
     <version.felix.scr>1.0.0</version.felix.scr>
     <version.felix.webconsole>1.2.10</version.felix.webconsole>
     <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.spi>1.0.2</version.jboss.osgi.spi>
+    <version.jboss.osgi.deployment>1.0.0-SNAPSHOT</version.jboss.osgi.deployment>
+    <version.jboss.osgi.spi>1.0.3-SNAPSHOT</version.jboss.osgi.spi>
     <version.json>20070829</version.json>
-    <version.osgi>r4v42</version.osgi>
+    <version.osgi>4.2.0</version.osgi>
   </properties>
 
   <!-- Dependencies  -->
@@ -57,6 +58,12 @@
       <groupId>org.jboss.osgi</groupId>
       <artifactId>jboss-osgi-spi</artifactId>
       <version>${version.jboss.osgi.spi}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.osgi.runtime</groupId>
+      <artifactId>jboss-osgi-deployment</artifactId>
+      <version>${version.jboss.osgi.deployment}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>

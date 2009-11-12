@@ -28,9 +28,9 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.felix.webconsole.internal.core.BundlesServlet;
-import org.jboss.osgi.spi.service.DeployerService;
-import org.jboss.osgi.spi.service.DeploymentRegistryService;
-import org.jboss.osgi.spi.util.BundleDeployment;
+import org.jboss.osgi.deployment.deployer.DeployerService;
+import org.jboss.osgi.deployment.deployer.Deployment;
+import org.jboss.osgi.deployment.deployer.DeploymentRegistryService;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
@@ -71,7 +71,7 @@ public class BundlesPlugin extends BundlesServlet
       
       String symbolicName = bundle.getSymbolicName();
       Version version = bundle.getVersion();
-      BundleDeployment dep = registry.getBundleDeployment(symbolicName, version);
+      Deployment dep = registry.getDeployment(symbolicName, version);
       if (dep == null)
       {
          getLog().log(LogService.LOG_WARNING, "Cannot find bundle deployment for: " + bundle);
@@ -80,7 +80,7 @@ public class BundlesPlugin extends BundlesServlet
       
       try
       {
-         service.undeploy(new BundleDeployment[] { dep });
+         service.undeploy(new Deployment[] { dep });
          return true;
       }
       catch (BundleException be)
