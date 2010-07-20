@@ -31,6 +31,8 @@ import java.net.URL;
 import org.apache.felix.webconsole.internal.core.InstallAction;
 import org.jboss.osgi.deployment.deployer.DeployerService;
 import org.jboss.osgi.deployment.deployer.Deployment;
+import org.jboss.osgi.deployment.deployer.DeploymentFactory;
+import org.jboss.osgi.spi.util.BundleInfo;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
@@ -64,7 +66,8 @@ public class InstallActionExt extends InstallAction
          {
             URL bundleURL = getBundleURL(bundleFile);
 
-            Deployment dep = deployer.createDeployment(bundleURL);
+            BundleInfo info = BundleInfo.createBundleInfo(bundleURL);
+            Deployment dep = DeploymentFactory.createDeployment(info);
             dep.setStartLevel(startlevel);
             dep.setAutoStart(doStart);
 
@@ -104,7 +107,7 @@ public class InstallActionExt extends InstallAction
       URL bundleURL;
       try
       {
-         bundleURL = bundleFile.toURL();
+         bundleURL = bundleFile.toURI().toURL();
       }
       catch (MalformedURLException ex)
       {
