@@ -21,13 +21,13 @@
   <artifactId>jboss-osgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.4</version>
   
   <!-- Parent -->
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.7</version>
   </parent>
 
   <!-- Source Control -->
@@ -46,8 +46,8 @@
     <version.felix.scr>1.0.0</version.felix.scr>
     <version.felix.webconsole>1.2.10</version.felix.webconsole>
     <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.deployment>1.0.3-SNAPSHOT</version.jboss.osgi.deployment>
-    <version.jboss.osgi.spi>1.0.10-SNAPSHOT</version.jboss.osgi.spi>
+    <version.jboss.osgi.deployment>1.0.3</version.jboss.osgi.deployment>
+    <version.jboss.osgi.spi>1.0.10</version.jboss.osgi.spi>
     <version.json>20070829</version.json>
     <version.osgi>4.2.0</version.osgi>
   </properties>
