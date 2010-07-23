@@ -17,11 +17,11 @@
   <name>JBossOSGi WebConsole</name>
   <description>The JBossOSGi Web Console</description>
 
-  <groupId>org.jboss.osgi.bundles</groupId>
-  <artifactId>jboss-osgi-webconsole</artifactId>
+  <groupId>org.jboss.osgi.webconsole</groupId>
+  <artifactId>jbosgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
-  <version>1.0.4</version>
+  <version>1.0.5-SNAPSHOT</version>
   
   <!-- Parent -->
   <parent>
