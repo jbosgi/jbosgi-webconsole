@@ -21,7 +21,7 @@
   <artifactId>jboss-osgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
-  <version>1.0.5-SNAPSHOT</version>
+  <version>1.0.5</version>
   
   <!-- Parent -->
   <parent>
