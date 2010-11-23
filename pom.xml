@@ -18,7 +18,7 @@
   <description>The JBossOSGi Web Console</description>
 
   <groupId>org.jboss.osgi.webconsole</groupId>
-  <artifactId>jboss-osgi-webconsole</artifactId>
+  <artifactId>jbosgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
   <version>1.0.6-SNAPSHOT</version>
@@ -46,8 +46,8 @@
     <version.felix.scr>1.0.0</version.felix.scr>
     <version.felix.webconsole>1.2.10</version.felix.webconsole>
     <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.deployment>1.0.3</version.jboss.osgi.deployment>
-    <version.jboss.osgi.spi>1.0.10</version.jboss.osgi.spi>
+    <version.jboss.osgi.deployment>1.0.9-SNAPSHOT</version.jboss.osgi.deployment>
+    <version.jboss.osgi.spi>1.0.19-SNAPSHOT</version.jboss.osgi.spi>
     <version.json>20070829</version.json>
     <version.osgi>4.2.0</version.osgi>
   </properties>
@@ -55,14 +55,14 @@
   <!-- Dependencies  -->
   <dependencies>
     <dependency>
-      <groupId>org.jboss.osgi</groupId>
-      <artifactId>jboss-osgi-spi</artifactId>
+      <groupId>org.jboss.osgi.spi</groupId>
+      <artifactId>jbosgi-spi</artifactId>
       <version>${version.jboss.osgi.spi}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.jboss.osgi.deployment</groupId>
-      <artifactId>jboss-osgi-deployment</artifactId>
+      <artifactId>jbosgi-deployment</artifactId>
       <version>${version.jboss.osgi.deployment}</version>
       <scope>provided</scope>
     </dependency>
