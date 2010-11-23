@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc
+END
+SystemPropertiesPrinter.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/SystemPropertiesPrinter.java
+END
+ConfigurationRender.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/ConfigurationRender.java
+END
+LicenseServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/LicenseServlet.java
+END
+ThreadPrinter.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/ThreadPrinter.java
+END
+ConfigurationPrinterAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/ConfigurationPrinterAdapter.java
+END
+ShellServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/java/org/apache/felix/webconsole/internal/misc/ShellServlet.java
+END

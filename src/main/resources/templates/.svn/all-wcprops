@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates
+END
+bundles.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/bundles.html
+END
+main_header.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/main_header.html
+END
+vmstat.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/vmstat.html
+END
+deployment.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/deployment.html
+END
+license.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/license.html
+END
+main_footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/main_footer.html
+END
+obr.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/obr.html
+END
+vmstat_restart.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/vmstat_restart.html
+END
+services.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/services.html
+END
+vmstat_stop.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/vmstat_stop.html
+END
+logs.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/logs.html
+END
+components.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/components.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/config.html
+END
+shell.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/templates/shell.html
+END

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <!-- ====================================================================== -->
-  <!--                                                                        -->
-  <!--  JBoss, the OpenSource J2EE webOS                                      -->
-  <!--                                                                        -->
-  <!--  Distributable under LGPL license.                                     -->
-  <!--  See terms of license at http://www.gnu.org.                           -->
-  <!--                                                                        -->
-  <!-- ====================================================================== -->
+<!-- ====================================================================== -->
+<!-- -->
+<!-- JBoss, the OpenSource J2EE webOS -->
+<!-- -->
+<!-- Distributable under LGPL license. -->
+<!-- See terms of license at http://www.gnu.org. -->
+<!-- -->
+<!-- ====================================================================== -->
 
-  <!-- $Id: pom.xml 91197 2009-07-14 09:48:24Z thomas.diesler@jboss.com $ -->
-  
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<!-- $Id: pom.xml 91197 2009-07-14 09:48:24Z thomas.diesler@jboss.com $ -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <name>JBossOSGi WebConsole</name>
@@ -21,13 +22,13 @@
   <artifactId>jbosgi-webconsole</artifactId>
   <packaging>bundle</packaging>
 
-  <version>1.0.6-SNAPSHOT</version>
-  
+  <version>3.1.6-SNAPSHOT</version>
+
   <!-- Parent -->
   <parent>
     <groupId>org.jboss.osgi</groupId>
     <artifactId>jboss-osgi-parent</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
   </parent>
 
   <!-- Source Control -->
@@ -36,100 +37,96 @@
     <developerConnection>scm:git:git@github.com:jbosgi/jbosgi-webconsole.git</developerConnection>
     <url>http://github.com/jbosgi/jbosgi-webconsole</url>
   </scm>
-  
+
   <!-- Properties -->
   <properties>
-    <version.commons.fileupload>1.1.1</version.commons.fileupload>
-    <version.commons.io>1.4</version.commons.io>
-    <version.felix.bundlerepository>1.0.3</version.felix.bundlerepository>
-    <version.felix.osgi.core>1.4.0</version.felix.osgi.core>
-    <version.felix.scr>1.0.0</version.felix.scr>
-    <version.felix.webconsole>1.2.10</version.felix.webconsole>
-    <version.javax.servlet>2.4</version.javax.servlet>
-    <version.jboss.osgi.deployment>1.0.9-SNAPSHOT</version.jboss.osgi.deployment>
-    <version.jboss.osgi.spi>1.0.19-SNAPSHOT</version.jboss.osgi.spi>
-    <version.json>20070829</version.json>
     <version.osgi>4.2.0</version.osgi>
   </properties>
 
-  <!-- Dependencies  -->
+  <!-- Dependencies -->
   <dependencies>
+    
     <dependency>
-      <groupId>org.jboss.osgi.spi</groupId>
-      <artifactId>jbosgi-spi</artifactId>
-      <version>${version.jboss.osgi.spi}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.osgi.deployment</groupId>
-      <artifactId>jbosgi-deployment</artifactId>
-      <version>${version.jboss.osgi.deployment}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>${version.javax.servlet}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>commons-fileupload</groupId>
-      <artifactId>commons-fileupload</artifactId>
-      <version>${version.commons.fileupload}</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>${version.commons.io}</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.felix</groupId>
-      <artifactId>org.apache.felix.webconsole</artifactId>
-      <version>${version.felix.webconsole}</version>
-      <scope>provided</scope>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.4</version>
+        <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>${version.json}</version>
-      <scope>compile</scope>
-      <optional>true</optional>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>1.1.1</version>
+        <scope>provided</scope>
+        <optional>true</optional>
     </dependency>
+
     <dependency>
-      <groupId>org.apache.felix</groupId>
-      <artifactId>org.apache.felix.scr</artifactId>
-      <version>${version.felix.scr}</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.apache.felix</groupId>
-          <artifactId>org.osgi.core</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.apache.felix</groupId>
-          <artifactId>org.osgi.compendium</artifactId>
-        </exclusion>
-      </exclusions>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>1.4</version>
+        <scope>provided</scope>
+        <optional>true</optional>
     </dependency>
+
     <dependency>
-      <groupId>org.apache.felix</groupId>
-      <artifactId>org.apache.felix.bundlerepository</artifactId>
-      <version>${version.felix.bundlerepository}</version>
-      <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>org.apache.felix</groupId>
-          <artifactId>org.osgi.core</artifactId>
-        </exclusion>
-      </exclusions>
-      <optional>true</optional>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20070829</version>
+        <scope>compile</scope>
+        <optional>true</optional>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.scr</artifactId>
+        <version>1.6.0</version>
+        <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.shell</artifactId>
+        <version>1.0.0</version>
+        <scope>provided</scope>
     </dependency>
     
+    <!--
+       Required for a simple VersionRange class, the class from
+       the utils bundle is overkill and requires JDK 1.4 or better
+    -->
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.framework</artifactId>
+        <version>2.0.2</version>
+        <scope>provided</scope>
+        <optional>true</optional>
+    </dependency>
+
+    <!--  Parsing Import/Export-Package headers -->
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.utils</artifactId>
+        <version>1.0.0</version>
+        <scope>provided</scope>
+        <optional>true</optional>
+    </dependency>
+    
+    <!-- OSGi and Apache Felix OBR API -->
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.osgi.service.obr</artifactId>
+        <version>1.0.2</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.bundlerepository</artifactId>
+        <version>1.6.0</version>
+        <scope>provided</scope>
+        <optional>true</optional>
+    </dependency>
+
     <!-- org.osgi -->
     <dependency>
       <groupId>org.osgi</groupId>
@@ -141,10 +138,36 @@
       <artifactId>org.osgi.compendium</artifactId>
       <version>${version.osgi}</version>
     </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <!-- Build -->
   <build>
+    <resources>
+      <!-- default resources (may be removed when compat is removed) -->
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+      </resource>
+      <resource>
+        <targetPath>META-INF</targetPath>
+        <directory>${basedir}</directory>
+        <includes>
+          <include>LICENSE</include>
+          <include>NOTICE</include>
+          <include>DEPENDENCIES</include>
+          <include>changelog.txt</include>
+        </includes>
+      </resource>
+      <!-- CSS and images for backwards compatibility -->
+      <resource>
+        <directory>${basedir}/src/main/compat</directory>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -152,58 +175,69 @@
           <showDeprecation>false</showDeprecation>
         </configuration>
       </plugin>
+      <!-- translate UTF-8 encoded properties files to ISO-8859-1 -->
       <plugin>
-        <artifactId>maven-dependency-plugin</artifactId>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>native2ascii-maven-plugin</artifactId>
+        <version>1.0-alpha-1</version>
         <executions>
           <execution>
-            <id>copy</id>
-            <phase>process-resources</phase>
             <goals>
-              <goal>unpack</goal>
+              <goal>native2ascii</goal>
             </goals>
+            <configuration>
+              <encoding>UTF-8</encoding>
+            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <artifactItems>
-            <artifactItem>
-              <groupId>org.apache.felix</groupId>
-              <artifactId>org.apache.felix.webconsole</artifactId>
-              <type>jar</type>
-              <outputDirectory>target/classes</outputDirectory>
-            </artifactItem>
-          </artifactItems>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
+        <version>1.4.3</version>
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Bundle-SymbolicName>${artifactId}</Bundle-SymbolicName>
-            <Bundle-Activator>org.jboss.osgi.webconsole.internal.WebConsoleActivator</Bundle-Activator>
+            <Bundle-SymbolicName>
+              ${artifactId}
+            </Bundle-SymbolicName>
+            <Bundle-Vendor>
+              The Apache Software Foundation
+            </Bundle-Vendor>
+            <Bundle-DocURL>
+              http://felix.apache.org/site/apache-felix-web-console.html
+            </Bundle-DocURL>
+            <Bundle-Activator>
+              org.apache.felix.webconsole.internal.OsgiManagerActivator
+            </Bundle-Activator>
             <Export-Package>
-              org.apache.felix.webconsole;version=${version.felix.webconsole},
-              org.osgi.service.obr
+              org.apache.felix.webconsole;version=${project.version}
             </Export-Package>
             <Private-Package>
               !org.apache.felix.webconsole,
               org.apache.felix.webconsole.*,
-              org.jboss.osgi.webconsole.internal*
             </Private-Package>
             <Import-Package>
-              org.apache.felix.scr;
+              org.apache.felix.scr;version=1.0;resolution:=optional,
+              org.osgi.service.http,
               org.apache.felix.shell;
               org.osgi.service.*;resolution:=optional,
-              
-              <!-- FIXME https://jira.jboss.org/jira/browse/JBOSGI-177 -->
-              org.ops4j.pax.web.service;version=0.7,
-              
-              javax.portlet;resolution:=optional,*
+              javax.portlet;resolution:=optional,
+              javax.servlet.*;version=2.4,
+              *
             </Import-Package>
-            <Embed-Dependency>
-              <!-- Import/Export-Package parsing, OBR -->
+            <DynamicImport-Package>
               org.apache.felix.bundlerepository,
+              org.osgi.service.obr
+            </DynamicImport-Package>
+            <Embed-Dependency>
+              <!-- Import/Export-Package parsing -->
+              org.apache.felix.utils;inline=org/apache/felix/utils/manifest/**,
+              org.apache.felix.framework;inline=org/apache/felix/framework/util/VersionRange**,
+
+              <!-- ServiceTracker -->
+              org.osgi.compendium;
+              inline=org/osgi/util/tracker/*,
 
               <!-- Required for JSON data transfer -->
               json,
@@ -214,6 +248,10 @@
               <!-- Required by FileUpload and Util -->
               commons-io
             </Embed-Dependency>
+
+            <_removeheaders>
+              Embed-Dependency,Private-Package,Include-Resource
+            </_removeheaders>
           </instructions>
         </configuration>
       </plugin>

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui
+END
+logs.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/logs.js
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/config.js
+END
+configurationrender.js
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/configurationrender.js
+END
+shell.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/shell.js
+END
+bundles.css
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/bundles.css
+END
+ui.tabs.paging.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/ui.tabs.paging.js
+END
+webconsole.css
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/webconsole.css
+END
+packages.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/packages.js
+END
+vmstat.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/vmstat.js
+END
+logs.css
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/logs.css
+END
+deployment.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/deployment.js
+END
+config.css
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/config.css
+END
+obr.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/obr.js
+END
+license.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/license.js
+END
+configurationrender.css
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/configurationrender.css
+END
+services.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/services.js
+END
+shell.css
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/shell.css
+END
+components.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/components.js
+END
+deployment.css
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/deployment.css
+END
+bundles.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/bundles.js
+END
+obr.css
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/obr.css
+END
+license.css
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1030772/felix/releases/org.apache.felix.webconsole-3.1.6/src/main/resources/res/ui/license.css
+END
